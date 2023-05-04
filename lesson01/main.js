@@ -49,9 +49,8 @@ console.log(typeof c1);
  По-Батькові та роками. та вивести в консоль*/
 let name = prompt('first name:');
 let lastN = prompt('last name:');
-let age = prompt('your age:');
+let age = +prompt('your age:');
 console.log(name);
 console.log(lastN);
 console.log(age);
-
 
