@@ -107,17 +107,13 @@ console.log(sum(arr5));
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 let arr6 = [11, true, 4, 'go', 2, 5];
 function swap(arr, index1, index2) {
-    for (let i = 0; i < arr.length; i++) {
         let save = 0;
-        if (arr[i] === arr[index1]){
-            save = arr[i];
-            arr[i] = arr[index2];
-            arr[index2] = save;
-        }
-    }
+        save = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = save;
     return arr;
 }
-console.log(swap(arr6, 1 , 4));
+console.log(swap(arr6, 1 , 5));
 
 // Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
@@ -125,15 +121,13 @@ console.log(swap(arr6, 1 , 4));
 let arrayCurrency = [{currency:'USD',value:40},{currency:'EUR',value:42},{currency:'GBP',value:46.5} ];
 function exchange(sumUAH,currencyValues,exchangeCurrency){
 
-    switch (exchangeCurrency) {
-        case 'USD':
-            return  sumUAH / currencyValues[0].value;
-        case 'EUR':
-            return  sumUAH / currencyValues[1].value;
-        case 'GBP':
-            return  sumUAH / currencyValues[2].value;
-        default: return  "###";
+    for (let i = 0; i < currencyValues.length; i++) {
+
+       if (exchangeCurrency === currencyValues[i].currency){
+           return sumUAH / currencyValues[i].value;
+       }
     }
+
 }
-console.log(exchange(1000, arrayCurrency, 'USD'));
+console.log(exchange(10500, arrayCurrency, 'USD'));
 
