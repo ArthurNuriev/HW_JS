@@ -241,26 +241,3 @@ for (const item of coursesArray) {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
