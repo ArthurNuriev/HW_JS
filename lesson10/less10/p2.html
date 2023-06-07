@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p2</title>
+
+</head>
+<body>
+<div class="content"></div>
+<script>
+
+    let content = document.getElementsByClassName('content')[0];
+    let arrSessions = JSON.parse(localStorage.getItem('sessions')) || [];
+    arrSessions.forEach(value => {
+        let p = document.createElement('p');
+        p.innerHTML = `${value}<br>`
+        content.appendChild(p);
+    });
+
+</script>
+</body>
+</html>

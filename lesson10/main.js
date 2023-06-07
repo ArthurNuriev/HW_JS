@@ -44,15 +44,6 @@ p1.addEventListener('click', function (ev) {
     }
 })
 
-// let p2 = document.getElementById('page2');
-// let element = JSON.parse(localStorage.getItem('sessions'));
-// let u2 = document.getElementsByClassName('ul2');
-// p2.addEventListener('click', function (ev) {
-//     for (let j = 0; j < element.length; j++) {
-//         let li = document.createElement('li');
-//         li.innerText = element[j];
-//     }
-// })
 
 
 

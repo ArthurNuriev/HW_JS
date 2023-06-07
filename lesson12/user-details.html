@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user-details</title>
+</head>
+<body>
+
+
+<script>
+
+    const url = new URL(location);
+    const id = url.searchParams.get('id');
+
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(response => response.json())
+        .then(json => {
+            const ul = document.createElement('ul');
+            document.body.appendChild(ul);
+
+            function explorer(obj) {
+                for (const jsonKey in obj) {
+                    if (typeof obj[jsonKey] === "object"){
+                        explorer(obj[jsonKey]);
+                    }else {
+                        const li = document.createElement('li');
+                        li.innerText = `${jsonKey}: ${obj[jsonKey]}`
+                        ul.appendChild(li);
+                    }
+                }
+            }
+             explorer(json);
+        })
+
+</script>
+
+
+</body>
+</html>
