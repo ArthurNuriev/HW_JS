@@ -14,7 +14,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let btn = document.createElement('button');
             btn.innerText = 'details';
 
-            btn.addEventListener("click", ev => {
+            btn.addEventListener("click", () => {
                 console.log(location.href)
                 location.href = `../user-details/user-details.html?userId=${value.id}`
             })

@@ -38,7 +38,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                         let i = 0;
                         i++;
 
-                        button.addEventListener("click", ev => {
+                        button.addEventListener("click", () => {
                             location.href = `../post-details/post-details.html?postId=${post[postKey].id}`
                         })
                     }
