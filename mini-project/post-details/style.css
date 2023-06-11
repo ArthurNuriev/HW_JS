@@ -1,0 +1,27 @@
+body{
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+}
+.postDetails{
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #aed7c7;
+    width: 1000px;
+    padding: 20px;
+    cursor: pointer;
+}
+.commentElement{
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e2f1ea;
+    padding: 20px;
+    width: 1000px;
+
+}
+.commentInfo{
+    margin: 0;
+}

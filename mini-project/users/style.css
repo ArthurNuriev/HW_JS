@@ -1,0 +1,20 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+.userDiv{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #aed7c7;
+}
+.container{
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 660px;
+}
